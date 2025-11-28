@@ -1,6 +1,5 @@
 import requests
-import sys
-import os
+
 
 def transform_for_points(line):
     line = line.replace(', ', ',')[:-1]

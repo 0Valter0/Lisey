@@ -1,8 +1,8 @@
 from design import Ui_MainWindow
 from db_functions import *
 from api import *
-from PyQt6.QtWidgets import QApplication, QMainWindow
-from PyQt6.QtGui import QPixmap
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPixmap
 import sys
 
 bgcolor = '#008B8B'
@@ -13,7 +13,7 @@ class Window(QMainWindow, Ui_MainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.setupUi(self)
-        #self.showMaximized()
+        # self.showMaximized()
         self.setStyleSheet(f'background-color: {bgcolor};')
         self.draw_route_button.setStyleSheet(f'background-color: {'white'}')
         self.get_routes_button.setStyleSheet(f'background-color: {color};')
